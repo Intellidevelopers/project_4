@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+        margin: 0;
+        padding: 0;   
+        font-family: 'Poppins', sans-serif;
+        max-width: 100%;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+    color: #222;
+}
+p{
+    font-size: 16px;
+    color: #222;
+}
+#header{
+    padding: 20px 80px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar{
+    display: flex;
+     margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    padding: 0 20px;
+    list-style: none;
+}
+#navbar li a {
+    color: #222;
+    text-decoration: none;
+    position: relative;
+}
+#navbar li a::after{
+    bottom: -4px;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        background: #74b9ff;
+        opacity: 0.6;
+        transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+        width: 0;
+}
+#navbar li a:hover::after{
+    width: 100%;
+    opacity: 0.9;
+        
+}
+
+.benner{
+    background: url(./img/hero4.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}  
+.benner-text{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 150px;
+    padding-left: 60px;
+}
+.benner-text h4{
+    margin-bottom: 20px;
+}
+.benner-text h1{
+    color: #0984e3;
+    margin-bottom: 20px;
+}
+.benner-text h2{
+    margin-bottom: 20px;
+}
+.benner-text small{
+    margin-bottom: 20px;
+}
+.benner-text a {
+    display: block;
+    background: url(./img/button.png) no-repeat;
+    text-decoration: none;
+    color: #222;
+    padding: 5px 69px 15px 55px;
+    font-size: 23px;
+}
+.feature{
+    padding: 50px 0;
+}
+.feature-inner{
+    margin-bottom: 20px;
+    padding: 20px 0;
+    border: 1px solid rgb(0, 0, 0, .2);
+    text-align: center;
+}
+.feature-inner img{
+    margin-bottom: 30px;
+}
+.feature-inner span {
+    font-size: 13px;
+    padding: 4px 5px;
+    color: white;
+    background-color: #2d3436;
+    border-radius: 5px;
+}
+.product-list {
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0, .2);
+    box-shadow: 4px 4px 20px 0 rgb(0, 0, 0, .2);
+    padding: 20px;
+}
+.product-list img {
+    border-radius: 5px;
+}
+.product-list small{
+    display: block;
+    margin: 10px 0;  
+    font-weight: 400;
+    font-size: 16px;
+}
+.product-list h6 a{
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    font-size: 14px;
+}
+.p-icon{
+    color: #f1c40f;
+}
+.p-money-left span{
+    color: #0984e3;
+    display: block;
+    margin-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.p-money-right a img {
+    width: 40px;
+    height: 40px;
+    line-height: 60px;
+    text-decoration: none;
+    background-color: #74b9ff;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .new-arribles{
+    padding: 50px 0;
+    background: url(./img/b2.jpg) no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+  }
+  .new-arr-text{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .new-arr-text h6{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .new-arr-text span {
+   color: #e74c3c;
+  }
+  .new-arr-text a{
+    margin: auto;
+     width: 200px;
+     text-decoration: none;
+     color: white;
+     background-color: #222;
+     padding: 15px 30px;
+     border-radius: 5px;
+  }
+
+.product{
+    padding: 50px 0;
+}
+.sm-benner-box{
+    margin-bottom: 30px;
+    background: url(./img/b17.jpg) no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+.sm-benner-box small {
+    font-size: 26px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 10px;
+}
+.sm-benner-box h6{
+    font-size: 31px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.sm-benner-box p{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 10px;
+}
+.sm-benner-box a{
+    padding: 10px 10px;
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+    color: white;
+    background-color: #16a085;
+}
+.sm-benner-box-2{
+    background: url(./img/b10.jpg) no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    margin-bottom: 30px;
+}
+.sm-benner-box-2 small {
+    font-size: 26px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 10px;
+}
+.sm-benner-box-2 h6{
+    font-size: 31px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.sm-benner-box-2 p{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 10px;
+}
+.sm-benner-box-2 a{
+    padding: 10px 10px;
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+    color: white;
+    background-color: #16a085;
+}
+.sm-benner-box-3{
+    background: url(./img/b7.jpg) no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.sm-benner-box-3 h6{
+    font-size: 31px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.sm-benner-box-3 p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #c0392b;
+    margin-bottom: 10px;
+}
+
+.sm-benner-box-4{
+    background: url(./img/b4.jpg) no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.sm-benner-box-4 h6{
+    font-size: 31px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.sm-benner-box-4 p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #c0392b;
+    margin-bottom: 10px;
+}
+
+.sm-benner-box-5{
+    background: url(./img/b18.jpg) no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.sm-benner-box-5 h6{
+    font-size: 31px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.sm-benner-box-5 p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #c0392b;
+    margin-bottom: 10px;
+}
+.new-arr-text p{
+    color: white;
+}
+.form {	
+   
+	   width: 360px;
+		font: inherit;
+		box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+		border: 0;
+		outline: 0;
+		padding: 22px 18px;
+
+}
+.email-input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    padding: 8px;
+    outline: none;
+    flex: 1;
+  }
+  
+  button {
+    background-color: #16a085;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Optional: Add hover effect for the button */
+  button:hover {
+    background-color: #0056b3;
+  }
+
+.footer{
+    padding: 50px 0;
+} 
+.footer-1 small {
+    font-weight: 300;
+    font-size: 17px;
+    display: inline-block;
+}
+.footer-1 img{
+    margin-bottom: 20px;
+}
+.footer-1 p{
+    font-weight: bold;
+}
+.footer-1-p{
+    display: inline-block;
+}
+.footer-1 ul li{
+    padding: 0 5px;
+    list-style: none;
+    display: inline-block;
+}
+.footer-1 ul li i {
+    color: #2d3436;
+    font-size: 21px;
+}
+.footer-2 p{
+    font-weight: bold;
+}
+.footer-2 ul li {
+    list-style: none;
+    padding: 10px 0;
+    font-weight: 300;
+}
+.footer-inner {
+    margin-left: -30px;
+  }
+
+#mobile{
+    display: none;
+}
+#close{
+    display: none;
+}
+  
+  
+  /*shop part */
+
+  .shop-benner{
+    text-align: center;
+    background: url(./img/b1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+    color: white;
+  }
+  .shop-benner h2{
+    padding-top: 60px;
+    width: 100%;
+    display: block;
+    color: white;
+  }
+ 
+
+  .single_pic{
+    padding: 50px 0;
+  }
+  .small-img-group{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+  }
+
+  .single_details a{
+    text-decoration: none;
+    color: #222;
+  }
+  .single_details h4{
+    margin: 20px 0;
+  }
+  .single_details select{
+    margin: 20px 0;
+   display: block;
+  }
+  .single_details input{
+    text-align: center;
+    margin: 20px 0;
+    width: 50px;
+    margin-right: 20px;
+  }
+  .single_details h4{
+    font-size: 24px;
+  }
+  .single_details small{
+    font-weight: 200;
+    font-size: 22px;
+  }
+
+
+  /* Blog part */
+
+  .blog-benner{
+    text-align: center;
+    background: url(./img/b19.jpg) no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+    color: white;
+  }
+  .blog-benner h2{
+    color: white ;
+  }
+  .blog-post{
+    padding: 50px 0;
+    width: 100%;
+  }
+  .blog-post-left img{
+    height: 300px;
+    width: 100%;
+  }
+  .blog-post-right h3{
+    font-family: 'Mochiy Pop One', sans-serif;
+    margin: 15px 0;
+    font-size: 26px;
+    font-weight: 400;
+    color: #222;
+  }
+  .blog-post-right small{
+    display: block;
+    margin: 20px 0;
+    margin-bottom: 30px;
+    font-weight: 200;
+    font-size: 22px;
+  }
+  .blog-post-right a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #16a085;
+    padding: 20px 25px;
+  }
+
+  /* About  */
+  .about-benner{
+    text-align: center;
+    background: url(./img/b2.jpg) no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+    color: white;
+  }
+  .about-benner h2{
+    color: white ;
+  }
+  .about-post{
+    padding: 50px 0;
+    width: 100%;
+  }
+  .about-post-left img{
+    height: 500px;
+    width: 100%;
+  }
+  .about-post-right h3{
+    font-family: 'Mochiy Pop One', sans-serif;
+    margin: 15px 0;
+    font-size: 26px;
+    font-weight: 400;
+    color: #222;
+  }
+  .about-post-right small{
+    display: block;
+    margin: 20px 0;
+    margin-bottom: 30px;
+    font-weight: 200;
+    font-size: 22px;
+  }
+  .about-post-right a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #16a085;
+    padding: 20px 25px;
+  }
+  .about-post-right marquee {
+    background-color: #ccc;
+  }
