@@ -391,6 +391,8 @@ p{
 
 .footer{
     padding: 50px 0;
+	background-color:gray;
+	color: white;
 } 
 .footer-1 small {
     font-weight: 300;
